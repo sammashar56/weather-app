@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name= "viewport" content="width=width-device,initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge"> 
+        <title>WEATHER</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css"  
+    </head>
+
+    <body>
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    <h1>Whats the weather like?</h1>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is offset-4 is-4">
+                        <form method="POST">
+                            <div class="field has-addons">
+                                <div class="control is-expanded">
+                                    <input class="input" type="text" placeholder="City Name"><br>
+                                    <div class="control">
+                                        <button class="button is-info">Add city 
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-offset is-4">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-50*50">
+                                        <img src="http://openweathermap.org/img/w/{{weather.icon}}.png" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-conent">
+                                    <div class="content">
+                                        <p>
+                                            <span class="title">{{ weather.city }}</span>
+                                            <br>
+                                            <span class="subtitle"> {{ weather.temparature }} F</span>
+                                            <br> {{weather.description}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    </body>
+    <div style="text-align: center">
+        <footer class="footer" ,  >Developed by <a href="https://github.com/sammashar56">
+             Machar</a>
+        </footer>
+    </div>
+</html>
